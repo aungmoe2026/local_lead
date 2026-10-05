@@ -1,0 +1,16 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: local_lead_backend
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - PORT=9000
+    restart: always
+
+volumes:
+  shared_static:
