@@ -11,6 +11,7 @@ health. Franchises, retail parks, and head offices are filtered out.
 ## For the person using this (non-technical setup)
 
 **Requirements:**
+
 - **Python 3** — Windows/Mac: https://www.python.org/downloads/  
   On Windows, tick **"Add Python to PATH"** on the first install screen.
 - **Apify API token** — required for Google Maps discovery. Put it in
@@ -94,6 +95,23 @@ npm run dev
 ```
 
 Open `http://127.0.0.1:5173`.
+
+# Run the application with DOCKER
+
+If you want to run with docker, You must install docker software and follow the step.
+
+- Frontend
+  - cd frontend
+  - npm install
+  - npm run build
+
+- backend
+  - docker compose up -d --build
+
+Note : If you have anything changes in frontend, you need to build again,
+
+- npm install
+- npm build
 
 ## How discovery works
 
